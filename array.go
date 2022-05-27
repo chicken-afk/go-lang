@@ -13,13 +13,14 @@ func main() {
 
 	//Array Langsung
 
-	var values = [3]int{
+	var values = []int{
 		89,
 		90,
+		100,
 	}
 
 	fmt.Println(values)
-	fmt.Println(values[2])
+	fmt.Println(values[1])
 
 	//array function
 	fmt.Println(len(values))

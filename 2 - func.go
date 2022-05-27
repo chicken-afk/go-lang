@@ -14,6 +14,16 @@ func getFullName() (string, string) {
 	return "Eko", "Khannedy"
 }
 
+// Function return named value
+
+func getFullName2() (firstName string, middleName string, usia int) {
+	firstName = "Andika"
+	middleName = "Yuda"
+	usia = 28
+
+	return
+}
+
 func main() {
 	hasil := kali(2, 3)
 	fmt.Println(hasil)
@@ -27,4 +37,8 @@ func main() {
 	firstname, _ := getFullName()
 	fmt.Println(firstname)
 	// fmt.Println(lastName)
+
+	a, b, usia := getFullName2()
+
+	fmt.Println("Nama : ", a, b, ".Usia : ", usia)
 }

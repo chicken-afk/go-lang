@@ -21,4 +21,10 @@ func main() {
 	firstName, lastName := getFullName()
 	fmt.Println(firstName)
 	fmt.Println(lastName)
+
+	// Ignore return value
+
+	firstname, _ := getFullName()
+	fmt.Println(firstname)
+	// fmt.Println(lastName)
 }

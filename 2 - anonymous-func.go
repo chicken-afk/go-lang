@@ -13,6 +13,7 @@ func registerUser(name string, blacklist Blacklist) {
 }
 
 func main() {
+	// anonymous function
 	blacklist := func(name string) bool {
 		return name == "anjing"
 	}

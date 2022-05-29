@@ -7,7 +7,7 @@ func logging(name string) {
 }
 
 func runApplication() {
-	/** Even if in runApplication run error the logging function still run*/
+	/** Even if in runApplication error the logging function still run*/
 	defer logging("Andika")
 	fmt.Println("Run System")
 }

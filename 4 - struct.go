@@ -7,6 +7,11 @@ type Customer struct {
 	Age           int
 }
 
+type Data []struct {
+	Message string `json:"message"`
+	Status  string `json:"status"`
+}
+
 func main() {
 	var CustomerPremium Customer
 	CustomerPremium.Name = "Andika Yuda"
@@ -26,4 +31,13 @@ func main() {
 
 	CustomerFirstClass := Customer{"Gojo Satoru", "Shibuya", 28}
 	fmt.Println(CustomerFirstClass)
+
+	// One Dimentional struct
+	d := Data{
+		{"message1", "one"}, {"message2", "two"},
+		{"message3", "three"}, {"message4", "four"},
+	}
+	fmt.Println(d)
+	fmt.Println(d[0])
+	fmt.Println(d[1].Message)
 }

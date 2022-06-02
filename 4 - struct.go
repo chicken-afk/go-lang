@@ -14,4 +14,16 @@ func main() {
 	CustomerPremium.Age = 25
 	fmt.Println(CustomerPremium)
 	fmt.Println(CustomerPremium.Name)
+
+	// Struct Literals
+
+	CustomerReguler := Customer{
+		Name:    "Prasety Putra",
+		Address: "New York City",
+		Age:     33,
+	}
+	fmt.Println(CustomerReguler)
+
+	CustomerFirstClass := Customer{"Gojo Satoru", "Shibuya", 28}
+	fmt.Println(CustomerFirstClass)
 }
